@@ -1,0 +1,55 @@
+
+
+
+.container {
+  width: 50%;
+  margin: auto;
+
+  @media only screen and (max-width: 976px) {
+    width: 90%;
+  }
+
+  @media only screen and (max-width: 576px) {
+    width: 100%;
+    margin: 0;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    input[type="text"] {
+      padding: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.1rem;
+      color: #333;
+     
+
+      &::placeholder {
+        color: #aaa;
+      }
+    }
+
+    button[type="submit"] {
+      align-self: flex-end;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: aqua;
+      cursor: pointer;
+
+      &:hover {
+    background-color: azure;
+      }
+    }
+  }
+}
